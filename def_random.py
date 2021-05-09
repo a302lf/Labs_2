@@ -5,7 +5,6 @@ str_2 = '~+-/*!&$#?=@<>'
 str_3 = 'abcdefghijklnopqrstuvwxyz'
 str_4 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 lst_all = [1, 2, 3, 4]
-lst_var = lst_all
 
 def gen_str (lst):
   lst_type = random.choice(lst)
@@ -40,6 +39,7 @@ def gen_equal(sequence):
 
 def form_pas(lenght):
   pas = ''
+  lst_var = lst_all.copy()
   for i in range(lenght): 
       if (lenght-i) == len(lst_var):
         pas += gen_equal(lst_var) 
